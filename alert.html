@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacked Phone Alert</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-top: 0;
+    }
+    p {
+      font-size: 1em;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .alert {
+      max-width: 100%;
+      width: 300px;
+      background-color: #ff0000;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      margin: 0 auto; /* Added to center the alert */
+      animation: alertAnimation 1s infinite alternate-reverse;
+    }
+
+    @keyframes alertAnimation {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .warning-sign {
+      font-size: 2em;
+      color: #fff;
+      text-align: center;
+    }
+    
+    /* Responsive styles */
+    @media screen and (max-width: 600px) {
+      .alert {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="alert">
+    <div class="warning-sign">&#9888;</div>
+    <h1>Alert!</h1>
+    <p>Your device has been hacked.</p>
+    <p>Immediate action required!</p>
+    <br>
+    <p>Urgent Alert: Attempted access to your personal logins detected, but blocked by your firewall. Take immediate action to secure your accounts as there's a risk of personal data leak.</p>
+  </div>
+
+</body>
+</html>
