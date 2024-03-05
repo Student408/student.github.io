@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hacked Phone Alert</title>
+  <title>device has been hacked</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -67,9 +67,13 @@
     <h1>Alert!</h1>
     <p>Your device has been hacked.</p>
     <p>Immediate action required!</p>
-    <br>
-    <p>Urgent Alert: Attempted access to your personal logins detected, but blocked by your firewall. Take immediate action to secure your accounts as there's a risk of personal data leak.</p>
+    
+    <p style="font-size: 12px;">Urgent Alert: Attempted access to your personal logins detected, but blocked by your firewall. Take immediate action to secure your accounts as there's a risk of personal data leak.</p>
   </div>
-
+  <script>
+    setTimeout(function() {
+      window.location.href = "alert-info.html";
+    }, 3000);
+  </script>
 </body>
 </html>
