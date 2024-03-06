@@ -1,47 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pause, Think and Act</title>
-<style>
-    /* Add your CSS styles here */
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>device has been hacked</title>
+  <style>
     body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #000000; /* Set background color */
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-top: 0;
+    }
+    p {
+      font-size: 1em;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .alert {
+      max-width: 100%;
+      width: 300px;
+      background-color: #ff0000;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      margin: 0 auto; /* Added to center the alert */
+      animation: alertAnimation 1s infinite alternate-reverse;
     }
 
-    .container {
-        max-width: 560px;
-        margin: 20px auto;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        background-color: #FF0000; /* Set box color */
+    @keyframes alertAnimation {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-10px);
+      }
     }
 
-    .video-container {
-        position: relative;
-        width: 100%;
-        padding-top: 56.25%; /* 16:9 aspect ratio */
+    .warning-sign {
+      font-size: 2em;
+      color: #fff;
+      text-align: center;
     }
-
-    .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    
+    /* Responsive styles */
+    @media screen and (max-width: 600px) {
+      .alert {
+        width: 90%;
+      }
     }
-</style>
+  </style>
 </head>
 <body>
-<div class="container">
-    <!-- Add your HTML content here -->
-    <h1>Pause, Think and Act - - Cybersecurity Awareness</h1>
-    <div class="video-container">
+  
+  <div class="alert">
+    <div class="warning-sign">&#9888;</div>
+    <h1>Pause, Think and Act </h1>
+    
       <p> Hi everyone, just letting you know! Although this joke may have scared you a little, it serves as a helpful reminder to exercise caution and awareness when using the internet. Always be on the lookout for suspected fraud and efforts to obtain your login credentials. Always double-check URLs, and never provide personal information to unidentified sources. Be careful when you're out there!
 
 Have you ever received an email promised millions from a Nigerian prince? 🤔 That is only one instance of a phishing scam, in which con artists attempt to trick you into parting with your personal information by making enticing offers.
@@ -55,7 +79,12 @@ Oh, and don't forget about those pyramid scams that guarantee financial success 
 And lastly, have you ever experienced identity theft? I promise you, it is not enjoyable for someone to pose as you and spend money on expensive items you have never purchased.
 
 So Always follow your gut and watch out for one another, whether you're avoiding phishing emails, dubious websites, or those too-good-to-be-true offers. Recall that we are all involved in this! My friends, remain alert, stay safe, and never stop sending positive energy! 😄✌️</p>  
+   
     </div>
-</div>
+  <script>
+    setTimeout(function() {
+      window.location.href = "alert-info.html";
+    }, 3000);
+  </script>
 </body>
 </html>
